@@ -7,8 +7,8 @@ import './Person/Person.css'
 class App extends Component {
   state = {
     persons :  [
-      {name:'Aliou', age:'40', hobby:'travelling'},
-      {name:'Titi', age:'37',  hobby:'reading'}
+      {name:'firstName', age:'myAge', hobby:'travelling'},
+      {name:'firstName', age:'myAge',  hobby:'reading'}
     ],
     count: 0
   }
@@ -22,8 +22,8 @@ class App extends Component {
     setTimeout(() => {
       this.setState({
         persons: [
-        {name:'Damus', age:'41', hobby:'Music'},
-        {name:'Ina', age:'37',  hobby:'travelling'}
+        {name:'firstName', age:'myAge', hobby:'Music'},
+        {name:'firstName', age:'myAge',  hobby:'travelling'}
       ]});
     }, 1000)
 
@@ -32,8 +32,8 @@ class App extends Component {
   nameChangeHandler = (event) => {
     this.setState({
       persons: [
-      {name:'Damus', age:'41', hobby:'Music'},
-      {name: event.target.value, age:'37',  hobby:'travelling'}
+      {name:'firstName', age:'myAge', hobby:'Music'},
+      {name: event.target.value, age:'someNumber',  hobby:'travelling'}
     ]});
   }
 
